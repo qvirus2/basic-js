@@ -9,6 +9,7 @@ class VigenereCipheringMachine {
         let keyIndex = 0
         let maskArr = []
         let encryptedArr = []
+        
         for (let i = 0; i < wordArr.length; i++) {
             if (wordArr[i].match(/[a-z]/gi)) {
                 if (keyIndex >= keyArr.length) keyIndex = 0
